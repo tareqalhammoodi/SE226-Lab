@@ -19,14 +19,28 @@ print()
 #Task 2
 result = 0
 def SUM(n):
+    """
+        This function calculates the sum of the series ∑(-1)^(k+1)/k.
+        The function uses a recursive approach
+        and updates a global variable to store the result.
+
+        Parameters:
+        n (int): the upper limit of the summation
+
+        Returns:
+        None
+    """
     global result
     if n != 0:
         result += (-1) ** (n + 1) / n
         SUM(n - 1)
+    else:
+        return None
 
 while True:
     N = int(input("Enter a value of n : "))
     if N < 1:
+        SUM(N)                                                                      # none already
         print("Invalid number, n should be greater or equal to 1 , Try again!")
     else:
         SUM(N)
