@@ -7,9 +7,9 @@ using namespace std;
 //Task 1
 list<int> Intersection(list<int> list1, list<int> list2) {
     list<int> intersection;                                                                                             // define a list
-    for (auto it = list1.begin(); it != list1.end(); ++it) {                                            // check whether there is common elements in list1 and list2
+    for (auto it = list1.begin(); it != list1.end(); ++it) {                                                            // check whether there is common elements in list1 and list2
         if (find(list2.begin(), list2.end(), *it) != list2.end()) {
-            intersection.push_back(*it);                                                                             // if so add it to intersection list
+            intersection.push_back(*it);                                                                                // if so add it to intersection list
         }
     }
     return intersection;                                                                                                // return list of common elements
@@ -30,7 +30,7 @@ list<string> isPalindromes(const list<string> & strings) {
             }
         }
         if (is_palindrome) {
-            palindromes.push_back(str);                                                                              // if so add it to the list
+            palindromes.push_back(str);                                                                                 // if so add it to the list
         }
     }
     return palindromes;                                                                                                 // return list palindromes strings
@@ -44,7 +44,7 @@ list<int> pirmeNumbers(list<int> List) {
         if (current_number == 0 || current_number == 1) {
             continue;
         }
-        primesList.push_back(current_number);                                                                        // add the current number to the prime list.
+        primesList.push_back(current_number);                                                                           // add the current number to the prime list.
         List.remove_if([current_number](int n) { return n % current_number == 0; });
     }
     return primesList;                                                                                                  // return list of prime numbers
@@ -56,14 +56,14 @@ list<string> Anagrams(string word, list<string> word_list) {
      * such as "cinema" and "iceman".
      */
     list<string> anagrams_list;                                                                                         // define an empty list to store anagrams
-    transform(word.begin(), word.end(), word.begin(), ::tolower);                                   // convert the input word into a sorted list of characters
+    transform(word.begin(), word.end(), word.begin(), ::tolower);                                                       // convert the input word into a sorted list of characters
     sort(word.begin(), word.end());
-    for (auto it = word_list.begin(); it != word_list.end(); it++) {                                 // iterate over the strings in word_list and for each string
+    for (auto it = word_list.begin(); it != word_list.end(); it++) {                                                    // iterate over the strings in word_list and for each string
         string sorted_word = *it;
-        transform(sorted_word.begin(), sorted_word.end(), sorted_word.begin(), ::tolower);          // convert the string into a sorted list of characters
+        transform(sorted_word.begin(), sorted_word.end(), sorted_word.begin(), ::tolower);                              // convert the string into a sorted list of characters
         sort(sorted_word.begin(), sorted_word.end());
         if (sorted_word == word) {                                                                                      // compare the sorted list of characters to the sorted list of characters for word
-            anagrams_list.push_back(*it);                                                                            // if the two lists are equal, the string is an anagram of word and should be added to the output list
+            anagrams_list.push_back(*it);                                                                               // if the two lists are equal, the string is an anagram of word and should be added to the output list
         }
     }
     return anagrams_list;                                                                                               // return the output list of anagrams
