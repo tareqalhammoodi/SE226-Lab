@@ -45,7 +45,7 @@ def Anagrams(word, word_list):
     sorted_input = sorted(word.lower().replace(" ", ""))    # convert the input word into a sorted list of characters
     for Word in word_list:                                  # iterate over the strings in word_list and for each string
         sorted_word = sorted(Word.lower().replace(" ", "")) # convert the string into a sorted list of characters
-        # since the word "enlists" has two "s" letter the code couldn't return it, so I added these two lines below to handle the repetition
+        # since the word "enlists" has two "s" letter the code couldn't return it, so I added these two lines below to handle the repetition (not sure if this is necessary)
         temp = []
         [temp.append(x) for x in sorted_word if x not in temp]
         if temp == sorted_input:                            # compare the sorted list of characters to the sorted list of characters for word
@@ -54,13 +54,13 @@ def Anagrams(word, word_list):
 
 #Testing
 List1 = [4, 9, 2, 0, 8]; List2 = [1, 5, 0, 2, 7]
-print(Intersection(List1, List2))
+print("Intersection: ", Intersection(List1, List2))
 
 strings = ["moon", "level", "kayak", "strawberry", "dad"]
-print(isPalindromes(strings))
+print("Palindromes:  ", isPalindromes(strings))
 
-List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-print(pirmeNumbers(List))
+List = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+print("Prime Numbers:", pirmeNumbers(List))
 
 word = "listen"; word_list = ["enlists", "google", "inlets", "banana"]
-print(Anagrams(word, word_list))
+print("Anagrams:     ", Anagrams(word, word_list))
