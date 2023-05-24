@@ -1,9 +1,11 @@
-Lab 1: Understanding basic input/output operations; the use of variables and arithmetic operators.
+### Lab 1: Understanding basic input/output operations; the use of variables and arithmetic operators.
+### Instructions:
 
 1. Create a Python project in which you have the following file: myFirstLabScript.py. This file will be your first Python script (also called a Python program or Python source code) that asks the user’s name, and then greets the user. After that, the program will ask the user to enter his/her student id. Lastly, it will print the id also.
+
+SAMPLE OUTPUT:
 ```
-'SAMPLE OUTPUT (bold parts are entered by user):
-What is your name?
+'What is your name?
 Ege
 Hello Ege.
 What is your Student ID? 20190120023
@@ -19,6 +21,8 @@ Final: 50
 Last Score: 71.5
 
 4. Try to output the below asterisk pattern using the built-in function “print” only once.
+
+SAMPLE OUTPUT:
 ```
 * 
 ** 
