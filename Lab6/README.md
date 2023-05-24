@@ -1,3 +1,25 @@
+### Lab 6: Understanding functions, lambda functions and recursion.
+### Instructions:
+
+Note: In this lab work, you will write a python script for questions 1 and 2. For questions 3 and 4 you will write in C++.
+
+1. Please solve the below equation in python with using only lambda functions and lists. You should take “n” and “x” as parameters entered by user.
+
+<p align="center">
+<img width="528" alt="Screenshot" src="https://github.com/tareqalhammoodi/SE226-Lab/assets/44919941/8cb6a503-88fd-4047-9abf-d290bdb1749d">
+</p>
+
+2. Please solve the equation below in python with a recursive function and a global variable. Your function should take “n” as a parameter but returns nothing. Use docstring to explain your function.
+
+<p align="center">
+<img width="262" alt="Screenshot" src="https://github.com/tareqalhammoodi/SE226-Lab/assets/44919941/804d28d8-491c-4171-953e-88431dc71276">
+</p>
+
+3. Please solve the equation in question 2 in C++ using recursion. You should take “n” from the user, but this time you will return the answer.
+
+4. Please overload your function from 3. This time it won’t take any parameters. Instead, you will ask for “n” inside of the function.
+
+
 Output testing for task 2 : 
 
 <img src="https://user-images.githubusercontent.com/44919941/232797055-0c76f8fb-006d-427e-893f-dc10c98d77d0.png" height="100px">
