@@ -1,7 +1,6 @@
 ### Lab 3: C++: Practice with common data structures.
 ### Instructions:
-
-Please open the Week4.pdf from BlackBoard, you may get help from the class for this lab. 
+ 
 In Week 4, you have learned different data structures like linked lists, stacks and queues. Also, you have seen implementations of them, either parts of it or as a whole.
 Your task for Lab 3 is to implement Queue data structure in C++. However, instead of implementing by arrays, you will be implementing it by linked lists. Your Queue will only hold an integer as its data. Below, you can see how a Queue operates.
 
