@@ -1,6 +1,6 @@
 ### Lab 2: Flow control: selection statements, looping statements.
 ### Instructions:
-1. Please download the “1000words.txt” file in BlackBoard under Lab2 folder. In the file, you will find array definitions for 1000 common words in English. The first line is an array declaration for C++ and the second line is for Python.
+1. Please download the “1000words.txt”. In the file, you will find array definitions for 1000 common words in English. The first line is an array declaration for C++ and the second line is for Python.
 
 2. Your task is to find and print all the words that starts with letter ‘e’. Then seperately, print the words that starts with following letters: ‘h’ and ‘a’.
 
